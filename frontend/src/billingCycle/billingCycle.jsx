@@ -4,6 +4,7 @@ import Content from '../common/template/content'
 import Tabs from '../common/tab/tabs'
 import TabsHeader from '../common/tab/tabsContent'
 import TabsContent from '../common/tab/tabsContent'
+import TabHeader from '../common/tab/tabHeader'
 
 export default class BillingCycle extends React.Component {
     render() {
@@ -15,10 +16,13 @@ export default class BillingCycle extends React.Component {
                 <Content>
                     <Tabs>
                         <TabsHeader>
-
+                            <TabHeader label='Listar' icon='bars' target='tabList' />
+                            <TabHeader label='Incluir' icon='plus' target='tabCreate' />
+                            <TabHeader label='Alterar' icon='pencil' target='tabUpdate' />
+                            <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader>
                         <TabsContent>
-                            
+
                         </TabsContent>
                     </Tabs>
                 </Content>
